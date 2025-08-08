@@ -1,0 +1,68 @@
+# Dependências do Sistema de Buffer de Vídeo RTSP
+# ================================================
+
+# Configuração e variáveis de ambiente
+python-dotenv==1.0.0
+
+# Sistema de logging estruturado
+# (nenhuma dependência adicional - usa logging built-in)
+
+# Monitoramento de sistema e hardware
+psutil==5.9.8
+
+# Servidor HTTP para gatilhos (opcional)
+flask==3.0.0
+werkzeug==3.0.1
+
+# Utilitários para manipulação de dados
+# (datetime, pathlib, threading são built-in)
+
+# ================================================
+# DEPENDÊNCIAS EXTERNAS NECESSÁRIAS (não Python)
+# ================================================
+# 
+# FFmpeg:
+#   - Windows: https://ffmpeg.org/download.html
+#   - Linux: sudo apt install ffmpeg (Ubuntu/Debian)
+#   - macOS: brew install ffmpeg
+#
+# Para Raspberry Pi:
+#   sudo apt update
+#   sudo apt install ffmpeg
+#
+# ================================================
+# DEPENDÊNCIAS OPCIONAIS
+# ================================================
+
+# Para desenvolvimento e testes
+# pytest==7.4.4
+# pytest-asyncio==0.23.2
+
+# Para análise de código
+# pylint==3.0.3
+# black==23.12.1
+
+# Para monitoramento avançado (opcional)
+# prometheus-client==0.19.0
+
+# ================================================
+# CONFIGURAÇÃO DE AMBIENTE
+# ================================================
+#
+# Para tmpfs no Linux (recomendado):
+#   sudo mount -t tmpfs -o size=2G tmpfs /dev/shm
+#   (já disponível na maioria das distribuições)
+#
+# Para Windows com ramdisk (opcional):
+#   - ImDisk Virtual Disk Driver
+#   - ou usar C:\temp como fallback
+#
+# ================================================
+# VERSÕES MÍNIMAS REQUERIDAS
+# ================================================
+#
+# Python: >= 3.8
+# FFmpeg: >= 4.0
+# RAM: >= 4GB (recomendado 8GB para Raspberry Pi)
+# Espaço em disco: >= 10GB para clipes
+#
